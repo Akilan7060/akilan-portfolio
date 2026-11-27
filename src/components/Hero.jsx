@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Github, Mail, Download, ArrowDown, MapPin, Sparkles } from 'lucide-react'
+import { Github, Mail, ArrowDown, MapPin, Sparkles } from 'lucide-react'
 import { profile } from '../data'
 export default function Hero() {
   return (
@@ -27,7 +27,7 @@ export default function Hero() {
           <p className="mt-4 flex items-center gap-2 text-sm text-white/80"><Sparkles size={15} className="text-accent" />{profile.tagline}</p>
           <div className="mt-9 flex flex-wrap gap-3">
             <a href="#projects" className="btn btn-primary"><ArrowDown size={16} /> Explore My Work</a>
-            <a href={profile.resume} download="Akilan_Resume.pdf" className="btn btn-ghost"><Download size={16} /> Download Resume</a>
+            <a href={profile.resume} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">Resume</a>
           </div>
           <div className="mt-8 flex items-center gap-3">
             <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub profile" className="glass glass-hover p-3"><Github size={20} /></a>

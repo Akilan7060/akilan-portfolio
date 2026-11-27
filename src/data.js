@@ -9,7 +9,7 @@ export const profile = {
   location: 'Sivagangai',
   github: 'https://github.com/Akilan7060',
   githubUser: 'Akilan7060',
-  resume: '/Akilan_Resume.pdf',
+  resume: '/resume.pdf',
   photo: '/akilan.jpg',
 }
 export const nav = ['Home', 'About', 'Skills', 'Projects', 'Experience', 'Education', 'Achievements', 'Contact']

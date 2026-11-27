@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Mail, Phone, MapPin, Github, Send } from 'lucide-react'
+import { Mail, Phone, MapPin, Github, Send, Download } from 'lucide-react'
 import Section, { Reveal } from './Section'
 import { profile } from '../data'
 const info = [
@@ -69,6 +69,12 @@ export default function Contact() {
               </div>
             </Reveal>
           ))}
+          <Reveal delay={0.24}>
+            <a href={profile.resume} download="Akilan_Resume.pdf" className="glass flex items-center gap-4 p-4 transition hover:border-accent/40">
+              <span className="grid h-11 w-11 place-items-center rounded-xl bg-accent/15 text-violet"><Download size={20} aria-hidden="true" /></span>
+              <div><p className="text-xs text-muted">Resume</p><p className="hover:text-violet">Download Resume</p></div>
+            </a>
+          </Reveal>
         </div>
         <Reveal>
           <form onSubmit={submit} className="glass space-y-4 p-6">

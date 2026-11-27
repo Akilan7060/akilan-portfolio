@@ -5,7 +5,7 @@ npm install
 npm run dev      # local dev server
 npm run build    # production build in dist/
 ```
-Edit your content in `src/data.js`. Resume: `public/Akilan_Resume.pdf`. Photo: `public/akilan.jpg`.
+Edit your content in `src/data.js`. Resume: `public/resume.pdf`. Photo: `public/akilan.jpg`.
 The contact form sends submissions through EmailJS without FormSubmit's first-submission confirmation. To configure it:
 
 1. Create an EmailJS email service and template addressed to the email in `src/data.js`.
